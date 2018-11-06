@@ -17,7 +17,7 @@ class Hand
         @score -= 10
         @score -= 10 if @score > 21
       when 3
-        @score = 23
+        2.times { @score -= 10 }
       end
     end
     @score
